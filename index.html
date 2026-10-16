@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari Dubai | Official Showroom</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN (pure CSS) ================= -->
+<div class="loader">
+    <span class="loader-logo">FERRARI</span>
+    <span class="loader-line"></span>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar fixed-top site-nav">
+        <div class="container-fluid px-3 px-lg-5">
+            <button class="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+                <span class="menu-lines"></span><span class="menu-text">Menu</span>
+            </button>
+            <a class="logo" href="#home">FERRARI<small>Dubai</small></a>
+            <a class="nav-cta" href="#testdrive">Test Drive</a>
+        </div>
+    </nav>
+
+    <!-- Side menu (Bootstrap Offcanvas) -->
+    <div class="offcanvas offcanvas-start side-menu" tabindex="-1" id="sideMenu">
+        <div class="offcanvas-header">
+            <span class="logo">FERRARI<small>Dubai</small></span>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled side-links">
+                <li><a href="#range"><span>01</span>The Range</a></li>
+                <li><a href="#gallery"><span>02</span>Gallery</a></li>
+                <li><a href="#showroom"><span>03</span>Showroom</a></li>
+                <li><a href="#services"><span>04</span>Services</a></li>
+                <li><a href="#testdrive"><span>05</span>Test Drive</a></li>
+                <li><a href="#contact"><span>06</span>Contact</a></li>
+            </ul>
+            <img src="images/showroom.jpg" class="side-img" alt="Ferrari showroom">
+            <p class="side-note">Sheikh Zayed Road, Dubai &middot; +971 4 000 0000</p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- ================= HERO (Bootstrap Carousel) ================= -->
+    <section id="home">
+        <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/sf90xx.jpg" class="hero-img" alt="Ferrari SF90 XX Spider">
+                    <div class="hero-caption">
+                        <p class="hero-tag"><span class="tag-line"></span>Now in Dubai</p>
+                        <h1>SF90 XX<br><span class="outline">Spider</span></h1>
+                        <p class="hero-sub">1030 cv. The most powerful road-legal open-top Ferrari ever built.</p>
+                        <a href="#range" class="btn btn-red me-2">Discover</a>
+                        <a href="#testdrive" class="btn btn-ghost">Book Test Drive</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/purosangue-side.jpg" class="hero-img" alt="Ferrari Purosangue">
+                    <div class="hero-caption">
+                        <p class="hero-tag"><span class="tag-line"></span>Four doors &middot; V12</p>
+                        <h1>Puro<br><span class="outline">sangue</span></h1>
+                        <p class="hero-sub">The first four-seat Ferrari, with a naturally aspirated V12.</p>
+                        <a href="#range" class="btn btn-red me-2">Discover</a>
+                        <a href="#testdrive" class="btn btn-ghost">Book Test Drive</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/812gts.jpg" class="hero-img" alt="Ferrari 812 GTS">
+                    <div class="hero-caption">
+                        <p class="hero-tag"><span class="tag-line"></span>Open top V12</p>
+                        <h1>812<br><span class="outline">GTS</span></h1>
+                        <p class="hero-sub">800 cv in Nero Daytona, under the Dubai sky.</p>
+                        <a href="#range" class="btn btn-red me-2">Discover</a>
+                        <a href="#testdrive" class="btn btn-ghost">Book Test Drive</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/roma-spider.jpg" class="hero-img" alt="Ferrari Roma Spider">
+                    <div class="hero-caption">
+                        <p class="hero-tag"><span class="tag-line"></span>La Nuova Dolce Vita</p>
+                        <h1>Roma<br><span class="outline">Spider</span></h1>
+                        <p class="hero-sub">Elegant V8 spider for evenings on Jumeirah Beach Road.</p>
+                        <a href="#range" class="btn btn-red me-2">Discover</a>
+                        <a href="#testdrive" class="btn btn-ghost">Book Test Drive</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators hero-lines">
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="3"></button>
+            </div>
+            <a href="#range" class="scroll-hint">Scroll</a>
+        </div>
+    </section>
+
+    <!-- ================= MOVING MODEL STRIP ================= -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>SF90 XX Spider</span><span>12Cilindri</span><span>812 GTS</span><span>Purosangue</span><span>Roma Spider</span><span>LaFerrari</span><span>F8 Tributo</span>
+            <span>SF90 XX Spider</span><span>12Cilindri</span><span>812 GTS</span><span>Purosangue</span><span>Roma Spider</span><span>LaFerrari</span><span>F8 Tributo</span>
+        </div>
+    </div>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-lg-3 reveal reveal-up">
+                    <div class="stat-box"><h3>1947</h3><p>Racing since</p></div>
+                </div>
+                <div class="col-6 col-lg-3 reveal reveal-up delay-1">
+                    <div class="stat-box"><h3>16</h3><p>F1 constructors' titles</p></div>
+                </div>
+                <div class="col-6 col-lg-3 reveal reveal-up delay-2">
+                    <div class="stat-box"><h3>6</h3><p>Models on display</p></div>
+                </div>
+                <div class="col-6 col-lg-3 reveal reveal-up delay-3">
+                    <div class="stat-box"><h3>24/7</h3><p>VIP concierge</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= THE RANGE (Bootstrap Cards) ================= -->
+    <section id="range" class="range">
+        <span class="bg-word">RANGE</span>
+        <div class="container position-relative">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal reveal-left">
+                <div>
+                    <p class="eyebrow">Available in our showroom</p>
+                    <h2 class="section-title">The <span class="text-red">Range</span></h2>
+                </div>
+                <a href="#testdrive" class="link-arrow">Request a quote</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-left">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/sf90xx.jpg" alt="SF90 XX Spider">
+                            <span class="badge car-badge">Hybrid</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">SF90 XX Spider</h3>
+                            <p class="car-colour"><span class="dot" style="background:#d40000"></span>Rosso Corsa &middot; Giallo stripes</p>
+                            <ul class="specs">
+                                <li><b>1030</b>cv</li>
+                                <li><b>2.3s</b>0-100</li>
+                                <li><b>320</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-up">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/12cilindri.jpg" alt="12Cilindri">
+                            <span class="badge car-badge">V12</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">12Cilindri</h3>
+                            <p class="car-colour"><span class="dot" style="background:#b3121b"></span>Rosso Emozione</p>
+                            <ul class="specs">
+                                <li><b>830</b>cv</li>
+                                <li><b>2.9s</b>0-100</li>
+                                <li><b>340</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-right">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/812gts.jpg" alt="812 GTS">
+                            <span class="badge car-badge">Spider</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">812 GTS</h3>
+                            <p class="car-colour"><span class="dot" style="background:#0b0b0b"></span>Nero Daytona</p>
+                            <ul class="specs">
+                                <li><b>800</b>cv</li>
+                                <li><b>3.0s</b>0-100</li>
+                                <li><b>340</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-left">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/purosangue-side.jpg" alt="Purosangue">
+                            <span class="badge car-badge">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">Purosangue</h3>
+                            <p class="car-colour"><span class="dot" style="background:#9a9ea3"></span>Grigio Titanio</p>
+                            <ul class="specs">
+                                <li><b>725</b>cv</li>
+                                <li><b>3.3s</b>0-100</li>
+                                <li><b>310</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-up">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/roma-spider.jpg" alt="Roma Spider">
+                            <span class="badge car-badge">V8 Spider</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">Roma Spider</h3>
+                            <p class="car-colour"><span class="dot" style="background:#4a4c4f"></span>Grigio Scuro</p>
+                            <ul class="specs">
+                                <li><b>620</b>cv</li>
+                                <li><b>3.4s</b>0-100</li>
+                                <li><b>320</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 reveal reveal-right">
+                    <article class="card car-card h-100">
+                        <div class="car-img">
+                            <img src="images/laferrari.jpg" alt="LaFerrari">
+                            <span class="badge car-badge">Icona</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="car-name">LaFerrari</h3>
+                            <p class="car-colour"><span class="dot" style="background:#e10600"></span>Rosso Scuderia</p>
+                            <ul class="specs">
+                                <li><b>963</b>cv</li>
+                                <li><b>2.4s</b>0-100</li>
+                                <li><b>350</b>km/h</li>
+                            </ul>
+                            <a href="#testdrive" class="link-arrow">Discover</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="text-center mb-5 reveal reveal-down">
+                <p class="eyebrow">Inside the showroom</p>
+                <h2 class="section-title">The <span class="text-red">Gallery</span></h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-md-8 reveal reveal-left">
+                    <div class="g-item g-tall"><img src="images/12cilindri-rear.jpg" alt="12Cilindri rear"><span>12Cilindri</span></div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-12 reveal reveal-right">
+                            <div class="g-item"><img src="images/812-front.jpg" alt="812 front"><span>812 Competizione A</span></div>
+                        </div>
+                        <div class="col-6 col-md-12 reveal reveal-right delay-1">
+                            <div class="g-item"><img src="images/f8.jpg" alt="F8 Tributo"><span>F8 Tributo</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 reveal reveal-up">
+                    <div class="g-item"><img src="images/laferrari-rear.jpg" alt="LaFerrari Aperta"><span>LaFerrari Aperta</span></div>
+                </div>
+                <div class="col-6 col-md-4 reveal reveal-up delay-1">
+                    <div class="g-item"><img src="images/812-side.jpg" alt="812 side"><span>812 Spider</span></div>
+                </div>
+                <div class="col-12 col-md-4 reveal reveal-up delay-2">
+                    <div class="g-item"><img src="images/purosangue-rear.jpg" alt="Purosangue rear"><span>Purosangue</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TAILOR MADE BANNER ================= -->
+    <section class="banner">
+        <img src="images/roma-black.jpg" class="banner-img" alt="Ferrari Tailor Made">
+        <div class="container banner-content">
+            <div class="row">
+                <div class="col-12 col-lg-6 reveal reveal-left">
+                    <p class="eyebrow">Tailor Made</p>
+                    <h2 class="section-title">Your Ferrari.<br><span class="outline">Your colour.</span></h2>
+                    <p class="banner-text">Choose from more than 50 heritage and modern colours in our Dubai personalisation studio.</p>
+                    <div class="colour-row">
+                        <span class="chip"><i style="background:#d40000"></i>Rosso Corsa</span>
+                        <span class="chip"><i style="background:#f6c800"></i>Giallo Modena</span>
+                        <span class="chip"><i style="background:#0b0b0b"></i>Nero Daytona</span>
+                        <span class="chip"><i style="background:#9a9ea3"></i>Grigio Titanio</span>
+                        <span class="chip"><i style="background:#1d3f8a"></i>Blu Pozzi</span>
+                        <span class="chip"><i style="background:#f2f2f2"></i>Bianco Avus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SHOWROOM ================= -->
+    <section id="showroom" class="showroom">
+        <span class="bg-word">DUBAI</span>
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 reveal reveal-left">
+                    <div class="showroom-frame">
+                        <img src="images/showroom.jpg" class="img-fluid" alt="Ferrari Dubai showroom">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 reveal reveal-right">
+                    <p class="eyebrow">Visit us</p>
+                    <h2 class="section-title">Ferrari <span class="text-red">Dubai</span> Showroom</h2>
+                    <p class="muted">A two-floor glass showroom with a private owners' lounge, a personalisation studio and a dedicated delivery bay.</p>
+                    <div class="info-list">
+                        <div class="info-row"><span>Address</span>Sheikh Zayed Road, Al Quoz, Dubai</div>
+                        <div class="info-row"><span>Hours</span>Sat - Thu, 9:00 AM - 9:00 PM</div>
+                        <div class="info-row"><span>Phone</span>+971 4 000 0000</div>
+                    </div>
+                    <a href="#testdrive" class="btn btn-red mt-4">Plan your visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 reveal reveal-down">
+                    <div class="service-box">
+                        <span class="num">01</span>
+                        <h4>New Cars</h4>
+                        <p>Configure and order the latest Ferrari models with our sales advisors.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 reveal reveal-down delay-1">
+                    <div class="service-box">
+                        <span class="num">02</span>
+                        <h4>Pre-Owned</h4>
+                        <p>Ferrari Approved cars with full inspection and warranty.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 reveal reveal-down delay-2">
+                    <div class="service-box">
+                        <span class="num">03</span>
+                        <h4>Service</h4>
+                        <p>Factory-trained technicians and genuine parts for every Ferrari.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TEST DRIVE FORM ================= -->
+    <section id="testdrive" class="testdrive">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 reveal reveal-up">
+                    <div class="booking-box">
+                        <p class="eyebrow text-center">Experience</p>
+                        <h2 class="section-title text-center mb-4">Book a <span class="text-red">Test Drive</span></h2>
+                        <form id="bookingForm">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Full name" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Phone number" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <select class="form-select" required>
+                                        <option value="">Select model</option>
+                                        <option>SF90 XX Spider</option>
+                                        <option>12Cilindri</option>
+                                        <option>812 GTS</option>
+                                        <option>Purosangue</option>
+                                        <option>Roma Spider</option>
+                                        <option>LaFerrari</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="2" placeholder="Message (optional)"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-red px-5">Send Request</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formMsg" class="alert alert-dark text-center mt-4 d-none">Thank you. Our team will contact you within 24 hours.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="site-footer">
+    <div class="container">
+        <div class="footer-big">FERRARI</div>
+        <div class="row g-4">
+            <div class="col-12 col-lg-4">
+                <span class="logo">FERRARI<small>Dubai</small></span>
+                <p class="mt-3">Sheikh Zayed Road, Al Quoz<br>Dubai, United Arab Emirates<br>+971 4 000 0000</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6>The Range</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#range">SF90 XX Spider</a></li>
+                    <li><a href="#range">12Cilindri</a></li>
+                    <li><a href="#range">Purosangue</a></li>
+                    <li><a href="#range">Roma Spider</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h6>Owners</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#services">Pre-Owned</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <h6>Newsletter</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your email">
+                    <button class="btn btn-red" type="button">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Ferrari Dubai Showroom &middot; Student project</span>
+            <span>Instagram &middot; YouTube &middot; X</span>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
